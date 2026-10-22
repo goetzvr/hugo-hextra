@@ -8,3 +8,23 @@
 {{- if (.Store.Get "hasMermaid") -}}
   {{- partial "scripts/mermaid.html" . -}}
 {{- end -}}
+
+{{/* Asciinema */}}
+{{- if (.Store.Get "hasAsciinema") -}}
+  {{- partial "scripts/asciinema.html" . -}}
+{{- end -}}
+
+{{/* Gallery */}}
+{{- if (.Store.Get "hasGallery") -}}
+  {{- partial "scripts/gallery.html" . -}}
+{{- end -}}
+
+{{/* OpenAPI */}}
+{{- if (.Store.Get "hasOpenAPI") -}}
+  {{- partial "scripts/openapi.html" . -}}
+{{- end -}}
+
+{{/* Medium Zoom */}}
+{{- if (.Store.Get "hasImageZoom") -}}
+  {{- partial "scripts/medium-zoom.html" . -}}
+{{- end -}}
